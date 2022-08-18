@@ -54,11 +54,14 @@ SUBDIRS += videoDarwin
 SUBDIRS += videoSGI
 
 # proprietary SDKs
+# these cause compilation troubles on mingw
+if DISABLED
 SUBDIRS += AVT
 SUBDIRS += DECKLINK
 SUBDIRS += HALCON
 SUBDIRS += NDI
 SUBDIRS += PYLON
+endif
 
 
 ## obviously we want to ship all subdirs...

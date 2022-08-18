@@ -219,7 +219,7 @@ AC_CHECK_FUNCS([bzero floor gettimeofday memset munmap pow sqrt strchr strdup st
 
 AC_CHECK_LIB([m],[sin])
 AC_CHECK_LIB([z],[zlibVersion])
-AC_CHECK_LIB([dl],[dlopen])
+AC_CHECK_LIB([dl_is_broken_on_msys2],[dlopen])
 
 ## w32 compatibility library
 #AC_CHECK_LIB([OLDNAMES], [close])
